@@ -1,0 +1,55 @@
+body{
+  background-color: #DFDAE0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-family: "Helvetica";
+  font-size: 25px;
+}
+
+a:focus{
+  outline:none;
+}
+
+button[type='submit']:focus{
+  outline:none
+}
+
+.btn{
+  background: #373a3c;
+  color:  #eceeef
+}
+
+
+
+ul li{
+  list-style: none;
+}
+
+
+#blogForm{
+  margin-top: 8rem;
+}
+
+#textAreaBlog{
+  margin-top: 8rem;
+}
+
+#blogField{
+  border-color: gray;
+  rows: 30;
+  resize: none;
+}
+
+.form-control {
+  border-color: gray;
+}
+
+.blog-post{
+  margin: 100px 0px;
+}
