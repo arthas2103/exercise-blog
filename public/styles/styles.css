@@ -1,55 +1,85 @@
-body{
-  background-color: #DFDAE0;
-}
+/*GENERAL STYLES*/
 
-h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
+body {
+    background-color: #DFDAE0;
 }
-
+a:focus {
+    outline: none;
+}
 label {
-  font-family: "Helvetica";
-  font-size: 25px;
+    font-family: "Helvetica";
+    font-size: 25px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+button[type='submit']:focus {
+    outline: none;
+}
+h1 {
+    text-align: center;
+}
+ul li {
+    list-style: none;
 }
 
-a:focus{
-  outline:none;
+/*Addblog.html styles*/
+
+.btn {
+    background: #373a3c;
+    color: #eceeef
 }
-
-button[type='submit']:focus{
-  outline:none
+#blogForm {
+    margin-top: 5rem;
 }
-
-.btn{
-  background: #373a3c;
-  color:  #eceeef
+#textAreaBlog {
+    margin-top: 8rem;
 }
-
-
-
-ul li{
-  list-style: none;
+#blogField {
+    border-color: inherit;
+    rows: 30;
+    resize: none;
 }
-
-
-#blogForm{
-  margin-top: 8rem;
+#toggleReminder {
+    color: red;
+    display: table;
+    margin: auto;
 }
-
-#textAreaBlog{
-  margin-top: 8rem;
-}
-
-#blogField{
-  border-color: gray;
-  rows: 30;
-  resize: none;
-}
-
 .form-control {
-  border-color: gray;
+    border-color: inherit;
+    color: gray;
+}
+.blog-post {
+    margin: 100px 0px;
+}
+.red {
+    border-color: red;
 }
 
-.blog-post{
-  margin: 100px 0px;
+/*Upload succesful page styles*/
+
+#succesfulHeader {
+    margin-top: 5rem;
+}
+#successLinks {
+    padding: 0;
+    margin-top: 4rem;
+    text-align: center;
+}
+#successLinks li {
+    background: #373a3c;
+    display: inline-block;
+    border-radius: 5px;
+    padding: .65rem;
+}
+#successLinks li:nth-child(1) {
+    margin-right: 3rem;
+}
+#successLinks li:nth-child(2) {
+    margin-left: 3rem;
+}
+#successLinks li a {
+    color: #eceeef;
+    font-family: inherit;
 }
