@@ -24,11 +24,24 @@ routes.post('/', function(req, res) {
         if (err) console.err(err.message);
         res.json({
             created: 'succesfully',
-            data
-        })
+            data: data
+        });
 
-        })
     });
+});
+
+routes.delete("/:id", function(req, res) {
+    console.log("delete request has been received!");
+    var id_delete = req.params.id;
+    blog.remove({
+        _id: id_delete
+    }, function(err) {
+        if (err) res.json({
+            error: err.message
+        });
+    });
+    res.json()
+});
 
 
 

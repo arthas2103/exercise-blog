@@ -1,13 +1,14 @@
 <div class="container .container-fluid">
     <div class="row">
 
-        <ul >
-          <div class="col-xs-12 ">
-            <li class="blog-post " ng-repeat="data in blog">
-                <h2>{{data.title}}</h2>
-                <p>{{data.body}}</p>
-            </li>
-          </div>
+        <ul>
+            <div class="col-xs-12 ">
+                <li class="blog-post " ng-repeat="data in blog">
+                    <h2>{{data.title}}</h2>
+                    <p>{{data.body}}</p>
+                    <button type="button" class="btn " ng-click="deleteBlog(data._id)">Delete blog</button>
+                </li>
+            </div>
         </ul>
     </div>
     <!-- Content here -->
